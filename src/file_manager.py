@@ -25,7 +25,7 @@ class FileManager:
     def read_ignorefile_content(self) -> list[str]:
         ignored_list = []
         try:
-            with open(self.ignorefile_path, 'r') as file:
+            with open(self.ignorefile_path, 'r', encoding="utf-8") as file:
                 lines = file.readlines()
                 for path in lines:
                     ignored_list.append(path)

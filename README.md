@@ -4,8 +4,6 @@
 
 </div>
 
-## Índice
-
 ## Introducción
 Como parte de un ***"Side Project"*** he creado este editor de metadatos para archivos MP3. Con esta aplicacion puedes editar directamente las etiquetas ***"title"***, ***"artist"***, ***"album"***, ***"date"*** y ***"length"***.
 

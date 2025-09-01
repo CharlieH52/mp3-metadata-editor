@@ -8,7 +8,6 @@ load_dotenv()
 
 MUSIC_ROOT = os.getenv('MUSIC_BANK')
 IGNOREFILE = os.getenv('IGNORE_GILE')
-ORIGINAL_PATH = os.getenv('ORIGINAL_PATH')
 
 class ViewModel:
     def __init__(self) -> None:

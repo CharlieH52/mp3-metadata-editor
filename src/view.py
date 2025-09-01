@@ -13,7 +13,7 @@ class ViewModel:
     def __init__(self) -> None:
         self.manager = FileManager(music_root_path=MUSIC_ROOT)
         self.ignore_songs = self.manager.read_ignorefile_content()
-        self.meta = MetadataEditor(files_root_path=MUSIC_ROOT, ignore_file=self.ignore_songs, original_path=ORIGINAL_PATH)
+        self.meta = MetadataEditor(files_root_path=MUSIC_ROOT, ignore_file=self.ignore_songs)
         
         self.songs = self.meta.song_name_list
         self.current_index = 0

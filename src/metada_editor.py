@@ -3,10 +3,9 @@ from mutagen.easyid3 import EasyID3
 import os
 
 class MetadataEditor:
-    def __init__(self, files_root_path: str, ignore_file: list[str], original_path: str) -> None:
+    def __init__(self, files_root_path: str, ignore_file: list[str]) -> None:
         self.music_root_path = files_root_path
         self.ignorefile = ignore_file
-        self.original_path = original_path
         self.song_name_list = [] 
         self.__create_abs_path_by_file()
 
